@@ -1,5 +1,5 @@
 :root {
-    --color: #ffc0cb;
+    --color: #d537c8;
     --cardgradient: linear-gradient(#ffc0cb, #e6e6fa);
     --border-style: dashed;
 }
@@ -16,4 +16,24 @@ header p {
 }
 main {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    border: var(--border-style);
+    margin: 5px;
+    text-align: center;
+    width: 300px;
+    background-image: var(--cardgradient);
+    justify-content: center;
+}
+.card h2,
+.card p,
+.card pre {
+    background-color: transparent;
+}
+pre {
+  display: flex;  
 }
