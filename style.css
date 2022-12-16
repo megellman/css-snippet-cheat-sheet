@@ -33,6 +33,7 @@ main pre {
     text-align: center;
     width: 300px;
     background-image: var(--cardgradient);
+    transition: steps(1, 12);
 }
 .card h2,
 .card p,
@@ -42,8 +43,8 @@ main pre {
 pre {
     text-align: start;
     padding-left: 20px;
-    
 }
+
 
 pre:active {
     user-select: text;
