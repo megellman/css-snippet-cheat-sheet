@@ -42,4 +42,10 @@ main pre {
 pre {
     text-align: start;
     padding-left: 20px;
+    
+}
+
+pre:active {
+    user-select: text;
+    background-color: #c7a2a8;
 }
