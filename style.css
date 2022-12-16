@@ -1,0 +1,19 @@
+:root {
+    --color: #ffc0cb;
+    --cardgradient: linear-gradient(#ffc0cb, #e6e6fa);
+    --border-style: dashed;
+}
+* {
+    background-color: aliceblue;
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--color);
+}
+header {
+    text-align: center;
+}
+header p {
+    color: antiquewhite;
+}
+main {
+    display: flex;
+}
