@@ -19,6 +19,12 @@ main {
     flex-wrap: wrap;
     justify-content: center;
 }
+
+main h2,
+main pre {
+    border: solid 2px black;
+}
+
 .card {
     display: flex;
     flex-direction: column;
@@ -27,7 +33,6 @@ main {
     text-align: center;
     width: 300px;
     background-image: var(--cardgradient);
-    justify-content: center;
 }
 .card h2,
 .card p,
@@ -35,5 +40,6 @@ main {
     background-color: transparent;
 }
 pre {
-  display: flex;  
+    text-align: start;
+    padding-left: 20px;
 }
