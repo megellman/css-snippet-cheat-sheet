@@ -1,7 +1,13 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
 :root {
     --color: #474040;
     --cardgradient: linear-gradient(#faf0f4, #e2a3ba, #d66a92);
     --border-style: dashed;
+    --dark-blue: #141e58
 }
 * {
     background-color: #7179a6;
@@ -11,7 +17,17 @@
 header {
     text-align: center;
 }
-header p {
+
+h1 {
+    background-color: var(--dark-blue);
+    width: 100%;
+    margin-top: 0;
+    padding-top: .5em;
+    height: 2em;
+}
+
+header p,
+h1 {
     color: rgb(253, 253, 253);
 }
 main {
@@ -20,6 +36,7 @@ main {
     justify-content: center;
     row-gap: 20px;
     column-gap: 10px;
+    margin-top: 30px;
 }
 
 main h2,
@@ -29,7 +46,7 @@ main pre {
 
 .card {
     display: grid;
-    border: solid 3px #141e58;
+    border: solid 3px var(--dark-blue);
     border-radius: 8px;
     margin: 5px;
     text-align: center;
@@ -67,6 +84,6 @@ pre:active {
 
 footer {
     text-align: center;
-    margin-top: 150px;
+    margin-top: 100px;
 
 }
