@@ -4,7 +4,7 @@
     --border-style: dashed;
 }
 * {
-    background-color: aliceblue;
+    background-color: #7179a6;
     font-family: 'Times New Roman', Times, serif;
     color: var(--color);
 }
@@ -12,7 +12,7 @@ header {
     text-align: center;
 }
 header p {
-    color: antiquewhite;
+    color: rgb(253, 253, 253);
 }
 main {
     display: flex;
