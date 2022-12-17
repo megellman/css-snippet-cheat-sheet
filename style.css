@@ -1,6 +1,6 @@
 :root {
-    --color: #d537c8;
-    --cardgradient: linear-gradient(#ffc0cb, #e6e6fa);
+    --color: #474040;
+    --cardgradient: linear-gradient(#faf0f4, #e2a3ba, #d66a92);
     --border-style: dashed;
 }
 * {
