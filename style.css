@@ -5,12 +5,14 @@ body {
 
 :root {
     --color: #474040;
-    --cardgradient: linear-gradient(#faf0f4, #e2a3ba, #d66a92);
+    --gradient: linear-gradient(#faf0f4, #d66a92);
     --border-style: dashed;
-    --dark-blue: #141e58
+    --dark-accent: #3e656c;
+    --medium-accent: #c3a1ad;
+    --white: rgb(246, 242, 242);
 }
 * {
-    background-color: #7179a6;
+    background-color: var(--medium-accent);
     font-family: 'Times New Roman', Times, serif;
     color: var(--color);
 }
@@ -19,16 +21,21 @@ header {
 }
 
 h1 {
-    background-color: var(--dark-blue);
+    background-color: var(--dark-accent);
     width: 100%;
     margin-top: 0;
     padding-top: .5em;
     height: 2em;
 }
 
+header p {
+    padding-left: 4em;
+    padding-right: 4em;
+}
+
 header p,
 h1 {
-    color: rgb(230, 228, 228);
+    color: var(--white);
 }
 main {
     display: flex;
@@ -41,17 +48,17 @@ main {
 
 main h2,
 main pre {
-    border: var(--border-style) 1px #710c31;
+    border: var(--border-style) 2px var(--medium-accent);
 }
 
 .card {
     display: grid;
-    border: solid 3px var(--dark-blue);
+    border: solid 3px var(--dark-accent);
     border-radius: 8px;
     text-align: center;
     width: 300px;
-    background-image: var(--cardgradient);
     transition: steps(1, 12);
+    background-color: var(--white);
 }
 
 .card h2,
@@ -74,6 +81,7 @@ pre {
     text-align: start;
     margin: 10px 10px;
     padding-left: 10px;
+    background-image: var(--gradient);
 }
 
 
