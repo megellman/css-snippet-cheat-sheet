@@ -60,6 +60,11 @@ main pre {
     width: 300px;
     transition: steps(1, 12);
     background-color: var(--white);
+    transition: 1s;
+}
+
+.card:hover {
+    rotate: 5deg;
 }
 
 .card h2,
