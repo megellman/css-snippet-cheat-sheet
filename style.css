@@ -5,10 +5,10 @@ body {
 
 :root {
     --text: #474040;
-    --gradient: linear-gradient(#faf0f4, #d66a92);
+    --gradient: linear-gradient(#faf0f4, #f891b7);
     --border-style: dashed;
-    --dark-accent: #6c3e54;
-    --medium-accent: #c3a1ad;
+    --dark-accent: #4b8a9d;
+    --medium-accent: #d7aebc;
     --white: rgb(246, 242, 242);
 }
 * {
@@ -37,6 +37,7 @@ header p,
 h1 {
     color: var(--white);
 }
+
 main {
     display: flex;
     flex-wrap: wrap;
@@ -82,12 +83,7 @@ pre {
     margin: 10px 10px;
     padding-left: 10px;
     background-image: var(--gradient);
-}
-
-
-pre:active {
-    user-select: text;
-    background-color: #c7a2a8;
+    user-select: all;
 }
 
 footer {
