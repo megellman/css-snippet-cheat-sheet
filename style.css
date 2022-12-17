@@ -4,17 +4,17 @@ body {
 }
 
 :root {
-    --color: #474040;
+    --text: #474040;
     --gradient: linear-gradient(#faf0f4, #d66a92);
     --border-style: dashed;
-    --dark-accent: #3e656c;
+    --dark-accent: #6c3e54;
     --medium-accent: #c3a1ad;
     --white: rgb(246, 242, 242);
 }
 * {
     background-color: var(--medium-accent);
     font-family: 'Times New Roman', Times, serif;
-    color: var(--color);
+    color: var(--text);
 }
 header {
     text-align: center;
