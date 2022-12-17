@@ -34,9 +34,9 @@ main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    row-gap: 20px;
+    row-gap: 40px;
     column-gap: 10px;
-    margin-top: 30px;
+    margin-top: 70px;
 }
 
 main h2,
@@ -84,6 +84,12 @@ pre:active {
 
 footer {
     text-align: center;
-    margin-top: 100px;
+    margin-top: 80px;
 
+}
+
+@media screen and (max-width: 767px) {
+    main {flex-direction: column; align-content: center;}
+    .card {width: 90%}
+    
 }
