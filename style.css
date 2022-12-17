@@ -3,6 +3,7 @@ body {
     padding: 0;
 }
 
+/* color palette for webpage  */
 :root {
     --text: #474040;
     --gradient: linear-gradient(#faf0f4, #f891b7);
@@ -11,11 +12,13 @@ body {
     --medium-accent: #d7aebc;
     --white: rgb(246, 242, 242);
 }
+
 * {
     background-color: var(--medium-accent);
     font-family: 'Times New Roman', Times, serif;
     color: var(--text);
 }
+
 header {
     text-align: center;
 }
@@ -52,6 +55,7 @@ main pre {
     border: var(--border-style) 2px var(--medium-accent);
 }
 
+/* the card will take 1 second to rotate  */
 .card {
     display: grid;
     border: solid 3px var(--dark-accent);
@@ -63,10 +67,12 @@ main pre {
     transition: 1s;
 }
 
+/* when you hover over a card, the card will rotate 5 degrees clockwise  */
 .card:hover {
     rotate: 5deg;
 }
 
+/* transparent background color here lets us see the white background on the card */
 .card h2,
 .card p,
 .card pre {
@@ -97,10 +103,12 @@ footer {
 
 }
 
+/* at 992px or highers, there will be 3 cards per row  */
 @media screen and (min-width: 992px){
     .card {width: 30%;}
 }
 
+/* at 767px or lower, the cards will be displayed in a flex-column and will only show 1 card per row  */
 @media screen and (max-width: 767px) {
     main {flex-direction: column; align-content: center;}
     .card {width: 90%}
