@@ -22,13 +22,13 @@ main {
 
 main h2,
 main pre {
-    border: solid 2px black;
+    border: var(--border-style) 1px #710c31;
 }
 
 .card {
-    display: flex;
-    flex-direction: column;
-    border: var(--border-style);
+    display: grid;
+    border: solid 3px #141e58;
+    border-radius: 8px;
     margin: 5px;
     text-align: center;
     width: 300px;
@@ -40,6 +40,17 @@ main pre {
 .card pre {
     background-color: transparent;
 }
+
+.card h2 {
+    margin-top: 5px;
+    height: 50%;
+}
+
+.card p {
+    margin: 10px 20px;
+    text-align: start;
+}
+
 pre {
     text-align: start;
     padding-left: 20px;
