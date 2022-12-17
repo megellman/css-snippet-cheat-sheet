@@ -66,7 +66,7 @@ pre:active {
 }
 
 footer {
-    position: relative;
-    bottom: 0;
-    left: 40%;
+    text-align: center;
+    margin-top: 150px;
+
 }
